@@ -25,7 +25,7 @@ class Cuenta {
   }
   extraerDinero() {
     let extraer = parseFloat(prompt("¿Cuanto dinero desea extraer?"));
-    if (this.saldo >= Cuenta.saldo){
+    if (Cuenta.saldo >= extraer){
     document.write(`<p>Extrajo $${extraer}</p>`);
     document.write(
       `<p>Su nuevo saldo es $${(Cuenta.saldo = Cuenta.saldo - extraer)}</p>`
